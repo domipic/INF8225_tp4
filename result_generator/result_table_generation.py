@@ -4,7 +4,7 @@ import numpy as np
 
 def find_song_and_artist(index):
     iterated = 0
-    for root, dirs, files in os.walk("../lyrics-master/database"):
+    for root, dirs, files in os.walk("../lemmatized_lyrics/database"):
         for name in files:
             if "_lemmatized" in name:
                 if iterated == index:
