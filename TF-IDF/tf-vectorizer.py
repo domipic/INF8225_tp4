@@ -12,10 +12,9 @@ counts = {}
 
 for root, dirs, files in os.walk("../lemmatized_lyrics/database"):
     for name in files:
-        if "lemmatized" in name:
-            infile = open(root + "/" + name, "r")
-            lyrics = infile.read().replace('\n', ' ').split("_")[0]
-            all_lyrics.append(lyrics)
+        infile = open(root + "/" + name, "r")
+        lyrics = infile.read().replace('\n', ' ').split("_")[0]
+        all_lyrics.append(lyrics)
 
 fitted = counter.fit_transform(all_lyrics)
 
