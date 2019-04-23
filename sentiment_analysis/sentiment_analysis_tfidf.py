@@ -40,5 +40,5 @@ for song in tfidf_stats:
         "neg":total_negativity
     })
     
-outfile = open("sentiment_scores_tdidf", "w")
+outfile = open("sentiment_scores_tfidf", "w")
 json.dump(scores, outfile)
