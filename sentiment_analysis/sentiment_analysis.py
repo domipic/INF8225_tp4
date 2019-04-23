@@ -5,7 +5,7 @@ import json
 
 all_lyrics = []
 
-for root, dirs, files in os.walk("../lyrics-master/database"):
+for root, dirs, files in os.walk("../lemmatized_lyrics/database"):
     for name in files:
         if "lemmatized" in name:
             infile = open(root + "/" + name, "r")
