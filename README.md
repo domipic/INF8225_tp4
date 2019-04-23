@@ -1,4 +1,4 @@
-# INF8225_tp4
+# INF8225 TP4: NLP, analyse sentimentale et proximité lexicale sur des paroles de chanson
 
 Travail effectué par Dominique Piché, Jean-Guillaum Langlois et Reph Mombrun
 
