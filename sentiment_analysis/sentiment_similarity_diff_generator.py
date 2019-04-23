@@ -12,8 +12,7 @@ for i in range(0, len(similarities)):
             "similarity" : similarities[i][j],
             "neg_diff" : abs(sentiments[i]["neg"] - sentiments[j]["neg"]),
             "neu_diff" : abs(sentiments[i]["neu"] - sentiments[j]["neu"]),
-            "pos_diff" : abs(sentiments[i]["pos"] - sentiments[j]["pos"]),
-            "compound_diff" : abs(sentiments[i]["compound"] - sentiments[j]["compound"])
+            "pos_diff" : abs(sentiments[i]["pos"] - sentiments[j]["pos"])
         }
         song_diffs.append(diff)
     diffs.append(song_diffs)
