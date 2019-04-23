@@ -6,12 +6,11 @@ def find_song_and_artist(index):
     iterated = 0
     for root, dirs, files in os.walk("../lemmatized_lyrics/database"):
         for name in files:
-            if "_lemmatized" in name:
-                if iterated == index:
-                    print(name, root.split("/")[-2])
-                    return name, root.split("/")[-2]
-                else:
-                    iterated = iterated + 1
+            if iterated == index:
+                print(name, root.split("/")[-2])
+                return name, root.split("/")[-2]
+            else:
+                iterated = iterated + 1
 
 similarities_json = json.load(open("../TF-IDF/cosine_similarities", "r"))
 sentiments_json = json.load(open("../sentiment_analysis/sentiment_scores", "r"))
